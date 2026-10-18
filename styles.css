@@ -4,6 +4,7 @@
   --line: #ccc5b9;
   --heading: #403d39;
   --text: #252422;
+  --muted: #aaa49b;
   --accent: #eb5e28;
   --accent-soft: #fbe1d4;
 }
@@ -372,7 +373,7 @@ td:first-child {
 .week-list .is-planned {
   display: flex;
   border: 1px dashed var(--line);
-  color: var(--heading);
+  color: var(--muted);
 }
 
 .week-list .is-clossed {
