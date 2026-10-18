@@ -355,7 +355,9 @@ td:first-child {
 }
 
 .week-list li > a,
-.week-list .is-planned {
+.week-list .is-planned,
+.week-list .is-ot,
+.week-list .is-closed {
   min-height: 5.5rem;
   flex-direction: column;
   align-items: flex-start;
@@ -380,6 +382,13 @@ td:first-child {
 .week-list .is-planned {
   display: flex;
   border: 1px dashed var(--line);
+  color: var(--heading);
+}
+
+.week-list .is-ot,
+.week-list .is-closed {
+  display: flex;
+  border: 1px solid var(--line);
   color: var(--heading);
 }
 

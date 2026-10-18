@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목록과 표 연습</title>
+    <style>
+        body {
+            font-family: "Malgun Gothic", sans-serif;
+            max-width: 640px;
+            margin: 40px auto;
+            line-height: 1.6;
+        }
+
+        h2 {
+            color: #2a5db0;
+            border-bottom: 2px solid #2a5db0;
+            padding-bottom: 4px;
+        }
+
+        .list-box {
+            padding: 8px 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .list-box li {
+            padding: 4px 0;
+        }
+
+        .bullets {
+            background: #eef6ff;
+            list-style-type: disc;
+            padding-left: 28px;
+        }
+
+        .bullets li.special {
+            list-style-type: square;
+            color: #c0392b;
+        }
+
+        .numbers {
+            background: #f4f9ee;
+            list-style-type: upper-roman;
+            padding-left: 36px;
+        }
+
+        table.books {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table.books th,
+        table.books td {
+            border: 1px solid #bbb;
+            padding: 8px 12px;
+            text-align: center;
+        }
+
+        table.books thead th {
+            background: #2a5db0;
+            color: #fff;
+        }
+
+        table.books tbody tr:nth-child(even) {
+            background: #f7f7f7;
+        }
+
+        table.books tbody tr:hover {
+            background: #fff3c4;
+            transition: background 0.2s;
+        }
+
+        table.books tfoot td,
+        table.books tfoot th {
+            background: #e8e8e8;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>순서 없는 목록</h2>
+    <ul class="list-box bullets">
+        <li>항목 하나</li>
+        <li class="special">항목 둘</li>
+        <li>항목 셋</li>
+    </ul>
+
+    <h2>순서 있는 목록</h2>
+    <ol class="list-box numbers">
+        <li>항목 하나</li>
+        <li>항목 둘</li>
+        <li>항목 셋</li>
+    </ol>
+
+    <h2>도서 정보</h2>
+    <table class="books">
+        <thead>
+            <tr>
+                <th>교과목</th>
+                <th>도서명</th>
+                <th>저자</th>
+                <th>출판사</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">웹프로그래밍</td>
+                <td>HTML5</td>
+                <td>임순범</td>
+                <td>생능</td>
+            </tr>
+            <tr>
+                <td>소셜 미디어</td>
+                <td>최윤철</td>
+                <td>생능</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>총계</th>
+                <td colspan="3">2권</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
