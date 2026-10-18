@@ -243,11 +243,17 @@ td:first-child {
 }
 
 .courses {
-  padding: 40px 44px 32px;
+  padding: 32px;
 }
 
 .courses .section-heading {
-  margin-bottom: 28px;
+  margin-bottom: 20px;
+}
+
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
 }
 
 .course-item,
@@ -256,60 +262,133 @@ td:first-child {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 20px 0;
-  border-bottom: 1px solid var(--line);
+  padding: 16px 0;
+}
+
+.course-item + .course-item {
+  border-top: 1px solid var(--line);
 }
 
 .course-item > :first-child {
   min-width: 0;
 }
 
-.course-item:last-child,
-.week-list li:last-child {
-  border-bottom: 0;
-}
-
-.course-type,
-.status {
+.course-group h3 {
+  margin: 0 0 8px;
   color: var(--heading);
-  font-size: 0.875rem;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
 }
 
-.course-type {
+.course-group ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.course-item > span:first-child {
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.course-badge {
   flex: 0 0 auto;
-  padding: 5px 10px;
+  padding: 2px 8px;
   border: 1px solid var(--line);
   border-radius: 999px;
+  color: var(--heading);
+  font-size: 0.8125rem;
   line-height: 1.35;
+  white-space: nowrap;
+}
+
+.course-item a {
+  display: flex;
+  min-width: 0;
+  align-items: baseline;
+  gap: 0.5rem;
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: underline var(--accent) 2px;
+  text-underline-offset: 4px;
+}
+
+.course-item a:hover {
+  color: var(--accent);
+}
+
+.course-link-hint {
+  flex: 0 0 auto;
+  color: var(--accent);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .week-list {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 0.75rem;
 }
 
+.weekly-practice-section {
+  margin-bottom: 4.5rem;
+}
+
 .week-list li {
-  min-height: 4.5rem;
+  min-height: 5.5rem;
+  padding: 0;
+}
+
+.week-list li > a,
+.week-list .is-planned {
+  min-height: 5.5rem;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 0.75rem;
-  border: 1px solid var(--line);
+  gap: 0.25rem;
+  padding: 1rem 1.25rem;
   border-radius: 0.75rem;
 }
 
-.week-label {
+.week-list a {
+  display: flex;
+  width: 100%;
+  background: var(--heading);
+  color: var(--paper);
+  text-decoration: none;
+}
+
+.week-list a:hover {
+  background: var(--accent);
+}
+
+.week-list .is-planned {
+  display: flex;
+  border: 1px dashed var(--line);
   color: var(--heading);
+}
+
+.week-label {
   font-weight: 700;
 }
 
-.status {
+.week-list small {
   font-size: 0.8125rem;
+  font-weight: 400;
 }
 
-.status.upcoming {
-  color: var(--heading);
+@media (max-width: 48rem) {
+  .week-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 30rem) {
+  .week-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 :focus-visible {
@@ -326,64 +405,4 @@ td:first-child {
 
 .site-footer p {
   margin-bottom: 0;
-}
-
-@media (max-width: 48rem) {
-  .container {
-    width: min(calc(100% - 2.5rem), 65rem);
-  }
-
-  .site-header {
-    padding: 2rem 0;
-  }
-
-  .content-section {
-    margin: 3.5rem 0;
-    padding: 1.25rem;
-  }
-
-  .courses {
-    padding: 40px 44px 32px;
-  }
-
-  .week-list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 37.5rem) {
-  .courses {
-    padding: 32px 20px 24px;
-  }
-
-  .course-item {
-    align-items: flex-start;
-    gap: 12px;
-    min-height: 0;
-    padding: 16px 0;
-  }
-
-  .course-type {
-    margin-top: 1px;
-  }
-}
-
-@media (max-width: 32rem) {
-  .identity {
-    grid-template-columns: auto 1fr;
-  }
-
-  .github-link {
-    grid-column: 2;
-    justify-self: start;
-  }
-
-  .table-wrapper {
-    margin-right: -1.25rem;
-    padding-right: 1.25rem;
-  }
-
-  .week-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }

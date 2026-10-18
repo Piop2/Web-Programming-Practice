@@ -75,6 +75,18 @@
                   </div>
                 </td>
               </tr>
+              <tr>
+                <td>YYYY.MM</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>YYYY.MM</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -84,54 +96,67 @@
         <div class="section-heading">
           <h2 id="courses-title"><span class="section-number">02.</span> 수강 과목</h2>
         </div>
-        <ul class="course-list">
-          <li class="course-item">
-            <span>사고와 표현</span>
-            <span class="course-type">교양</span>
-          </li>
-          <li class="course-item">
-            <span>문제해결과 인공지능</span>
-            <span class="course-type">교양</span>
-          </li>
-          <li class="course-item">
-            <span>기초 수학</span>
-            <span class="course-type">교양</span>
-          </li>
-          <li class="course-item">
-            <span>컴퓨터 프로그래밍 II</span>
-            <span class="course-type">전공</span>
-          </li>
-          <li class="course-item">
-            <span>컴퓨터 프로그래밍 실습 II</span>
-            <span class="course-type">전공</span>
-          </li>
-          <li class="course-item">
-            <a href="#weekly-practice">웹프로그래밍 및 AI에이전트 활용</a>
-            <span class="course-type">전공</span>
-          </li>
-        </ul>
+        <div class="course-list">
+          <section class="course-group" aria-labelledby="general-courses-title">
+            <h3 id="general-courses-title">교양</h3>
+            <ul>
+              <li class="course-item">
+                <span>사고와 표현</span>
+                <span class="course-badge">교양</span>
+              </li>
+              <li class="course-item">
+                <span>문제해결과 인공지능</span>
+                <span class="course-badge">교양</span>
+              </li>
+              <li class="course-item">
+                <span>기초 수학</span>
+                <span class="course-badge">교양</span>
+              </li>
+            </ul>
+          </section>
+          <section class="course-group" aria-labelledby="major-courses-title">
+            <h3 id="major-courses-title">전공</h3>
+            <ul>
+              <li class="course-item">
+                <span>컴퓨터 프로그래밍 II</span>
+                <span class="course-badge">전공</span>
+              </li>
+              <li class="course-item">
+                <span>컴퓨터 프로그래밍 실습 II</span>
+                <span class="course-badge">전공</span>
+              </li>
+              <li class="course-item">
+                <a href="#weekly-practice">
+                  <span>웹프로그래밍 및 AI에이전트 활용</span>
+                  <span class="course-link-hint" aria-hidden="true">↗</span>
+                </a>
+                <span class="course-badge">전공</span>
+              </li>
+            </ul>
+          </section>
+        </div>
       </section>
 
-      <section class="content-section" id="weekly-practice" aria-labelledby="weekly-title">
+      <section class="content-section weekly-practice-section" id="weekly-practice" aria-labelledby="weekly-title">
         <div class="section-heading">
           <h2 id="weekly-title"><span class="section-number">03.</span> 웹프로그래밍 주차별 링크</h2>
         </div>
         <ol class="week-list">
-          <li><span class="week-label">01주</span><span class="status upcoming">예정</span></li>
-          <li><span class="week-label">02주</span><span class="status upcoming">예정</span></li>
-          <li><span class="week-label">03주</span><span class="status upcoming">예정</span></li>
-          <li><span class="week-label">04주</span><span class="status upcoming">예정</span></li>
-          <li><span class="week-label">05주</span><span class="status upcoming">예정</span></li>
-          <li><span class="week-label">06주</span><span class="status upcoming">예정</span></li>
-          <li><span class="week-label">07주</span><span class="status upcoming">예정</span></li>
-          <li><span class="week-label">08주</span><span class="status upcoming">예정</span></li>
-          <li><span class="week-label">09주</span><span class="status upcoming">예정</span></li>
-          <li><span class="week-label">10주</span><span class="status upcoming">예정</span></li>
-          <li><span class="week-label">11주</span><span class="status upcoming">예정</span></li>
-          <li><span class="week-label">12주</span><span class="status upcoming">예정</span></li>
-          <li><span class="week-label">13주</span><span class="status upcoming">예정</span></li>
-          <li><span class="week-label">14주</span><span class="status upcoming">예정</span></li>
-          <li><span class="week-label">15주</span><span class="status upcoming">예정</span></li>
+          <li><a href="docs/profile/f-05.md"><span class="week-label">01주</span><small>실습 보기 →</small></a></li>
+          <li class="is-planned"><span class="week-label">02주</span><small>예정</small></li>
+          <li class="is-planned"><span class="week-label">03주</span><small>예정</small></li>
+          <li class="is-planned"><span class="week-label">04주</span><small>예정</small></li>
+          <li class="is-planned"><span class="week-label">05주</span><small>예정</small></li>
+          <li class="is-planned"><span class="week-label">06주</span><small>예정</small></li>
+          <li class="is-planned"><span class="week-label">07주</span><small>예정</small></li>
+          <li class="is-planned"><span class="week-label">08주</span><small>예정</small></li>
+          <li class="is-planned"><span class="week-label">09주</span><small>예정</small></li>
+          <li class="is-planned"><span class="week-label">10주</span><small>예정</small></li>
+          <li class="is-planned"><span class="week-label">11주</span><small>예정</small></li>
+          <li class="is-planned"><span class="week-label">12주</span><small>예정</small></li>
+          <li class="is-planned"><span class="week-label">13주</span><small>예정</small></li>
+          <li class="is-planned"><span class="week-label">14주</span><small>예정</small></li>
+          <li class="is-planned"><span class="week-label">15주</span><small>예정</small></li>
         </ol>
       </section>
     </main>
