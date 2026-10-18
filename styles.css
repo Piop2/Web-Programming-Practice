@@ -34,7 +34,9 @@ a {
   border-bottom: 1px solid var(--line);
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
   margin-top: 0;
 }
 
@@ -278,11 +280,11 @@ td:first-child {
   padding: 16px 0;
 }
 
-.course-item + .course-item {
+.course-item+.course-item {
   border-top: 1px solid var(--line);
 }
 
-.course-item > :first-child {
+.course-item> :first-child {
   min-width: 0;
 }
 
@@ -300,7 +302,7 @@ td:first-child {
   list-style: none;
 }
 
-.course-item > span:first-child {
+.course-item>span:first-child {
   color: var(--text);
   font-size: 1rem;
 }
@@ -343,7 +345,7 @@ td:first-child {
   padding: 0;
 }
 
-.week-list li > a,
+.week-list li>a,
 .week-list .is-planned,
 .week-list .is-clossed {
   min-height: 5.5rem;
