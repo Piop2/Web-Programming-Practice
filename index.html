@@ -9,25 +9,31 @@
   <body>
     <header class="site-header">
       <div class="container">
-        <p class="eyebrow">Portfolio</p>
-        <h1>Pio</h1>
-        <p class="affiliation">상명대학교 소프트웨어학과 1학년</p>
-        <p class="introduction">
-          풀스택 게임 개발자를 목표로 서버와 클라이언트를 모두 탐구합니다.
-        </p>
-        <a class="github-link" href="https://github.com/piop2">GitHub 프로필</a>
+        <div class="identity">
+          <div class="activity-badge" aria-hidden="true">P</div>
+          <div class="identity-copy">
+            <p class="eyebrow">Activity</p>
+            <h1>Pio</h1>
+            <p class="affiliation">상명대학교 소프트웨어학과 1학년</p>
+            <p class="introduction">
+              풀스택 게임 개발자를 목표로 서버와 클라이언트를 모두 탐구합니다.
+            </p>
+          </div>
+          <a class="github-link" href="https://github.com/piop2" target="_blank" rel="noreferrer">
+            GitHub <span aria-hidden="true">↗</span>
+          </a>
+        </div>
       </div>
     </header>
 
     <main class="container">
       <section class="content-section" aria-labelledby="achievements-title">
         <div class="section-heading">
-          <p class="eyebrow">Achievements</p>
-          <h2 id="achievements-title">실적</h2>
+          <h2 id="achievements-title"><span class="section-number">01.</span> 실적</h2>
         </div>
         <div class="table-wrapper">
           <table>
-            <caption>주요 실적 목록</caption>
+            <caption class="sr-only">실적</caption>
             <thead>
               <tr>
                 <th scope="col">시기</th>
@@ -39,35 +45,44 @@
             <tbody>
               <tr>
                 <td>2024.02</td>
-                <td>프로젝트</td>
+                <td><span class="chip chip--category">프로젝트</span></td>
                 <td>
                   기존 네이버 밴드 기반 동아리 홍보와 신청의 불편을 해결하기
                   위해, 교내 전체 동아리를 확인하고 동아리별 신청 폼과 신청
                   내역을 관리할 수 있는 웹사이트를 친구와 함께 개발했습니다.
                   동아리 신청 기간 한 달 동안 서비스를 안정적으로 운영했습니다.
                 </td>
-                <td>프론트엔드, 백엔드</td>
+                <td>
+                  <div class="chip-list" aria-label="담당 역할">
+                    <span class="chip chip--role">프론트엔드</span>
+                    <span class="chip chip--role">백엔드</span>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td>2021.11</td>
-                <td>프로젝트</td>
+                <td><span class="chip chip--category">프로젝트</span></td>
                 <td>
                   상용 게임 엔진 없이 스크립트만으로 Super Mario Bros. 1의
                   일부 레벨을 객체지향 방식으로 구현했습니다. 완성한 게임을
                   라즈베리 파이에 탑재해 학교 전시회에서 친구들이 컨트롤러로
                   플레이할 수 있도록 했습니다.
                 </td>
-                <td>프론트엔드, 백엔드</td>
+                <td>
+                  <div class="chip-list" aria-label="담당 역할">
+                    <span class="chip chip--role">프론트엔드</span>
+                    <span class="chip chip--role">백엔드</span>
+                  </div>
+                </td>
               </tr>
             </tbody>
           </table>
         </div>
       </section>
 
-      <section class="content-section" aria-labelledby="courses-title">
+      <section class="content-section courses" aria-labelledby="courses-title">
         <div class="section-heading">
-          <p class="eyebrow">Courses</p>
-          <h2 id="courses-title">수강 과목</h2>
+          <h2 id="courses-title"><span class="section-number">02.</span> 수강 과목</h2>
         </div>
         <ul class="course-list">
           <li class="course-item">
@@ -99,32 +114,31 @@
 
       <section class="content-section" id="weekly-practice" aria-labelledby="weekly-title">
         <div class="section-heading">
-          <p class="eyebrow">Weekly Practice</p>
-          <h2 id="weekly-title">웹프로그래밍 주차별 링크</h2>
+          <h2 id="weekly-title"><span class="section-number">03.</span> 웹프로그래밍 주차별 링크</h2>
         </div>
         <ol class="week-list">
-          <li><span>1주차</span><span class="status upcoming">예정</span></li>
-          <li><span>2주차</span><span class="status upcoming">예정</span></li>
-          <li><span>3주차</span><span class="status upcoming">예정</span></li>
-          <li><span>4주차</span><span class="status upcoming">예정</span></li>
-          <li><span>5주차</span><span class="status upcoming">예정</span></li>
-          <li><span>6주차</span><span class="status upcoming">예정</span></li>
-          <li><span>7주차</span><span class="status upcoming">예정</span></li>
-          <li><span>8주차</span><span class="status upcoming">예정</span></li>
-          <li><span>9주차</span><span class="status upcoming">예정</span></li>
-          <li><span>10주차</span><span class="status upcoming">예정</span></li>
-          <li><span>11주차</span><span class="status upcoming">예정</span></li>
-          <li><span>12주차</span><span class="status upcoming">예정</span></li>
-          <li><span>13주차</span><span class="status upcoming">예정</span></li>
-          <li><span>14주차</span><span class="status upcoming">예정</span></li>
-          <li><span>15주차</span><span class="status upcoming">예정</span></li>
+          <li><span class="week-label">01주</span><span class="status upcoming">예정</span></li>
+          <li><span class="week-label">02주</span><span class="status upcoming">예정</span></li>
+          <li><span class="week-label">03주</span><span class="status upcoming">예정</span></li>
+          <li><span class="week-label">04주</span><span class="status upcoming">예정</span></li>
+          <li><span class="week-label">05주</span><span class="status upcoming">예정</span></li>
+          <li><span class="week-label">06주</span><span class="status upcoming">예정</span></li>
+          <li><span class="week-label">07주</span><span class="status upcoming">예정</span></li>
+          <li><span class="week-label">08주</span><span class="status upcoming">예정</span></li>
+          <li><span class="week-label">09주</span><span class="status upcoming">예정</span></li>
+          <li><span class="week-label">10주</span><span class="status upcoming">예정</span></li>
+          <li><span class="week-label">11주</span><span class="status upcoming">예정</span></li>
+          <li><span class="week-label">12주</span><span class="status upcoming">예정</span></li>
+          <li><span class="week-label">13주</span><span class="status upcoming">예정</span></li>
+          <li><span class="week-label">14주</span><span class="status upcoming">예정</span></li>
+          <li><span class="week-label">15주</span><span class="status upcoming">예정</span></li>
         </ol>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container">
-        <p>최종 수정일: YYYY-MM-DD</p>
+        <p>최종 수정일: 2026-10-18</p>
       </div>
     </footer>
   </body>
